@@ -20,11 +20,14 @@ expose:
   - --v
   - 4
   config:
-    domain: 104.155.54.231.nip.io
+    domain: 34.77.117.211.nip.io
     exposer: Ingress
     http: "true"
 jenkins:
   Servers:
+    GHE:
+    - Name: GHE
+      Url: https://github.beescloud.com/api/v3/
     Global:
       EnvVars:
         TILLER_NAMESPACE: kube-system
